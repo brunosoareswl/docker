@@ -10,7 +10,7 @@ ENV APACHE_LOG_DIR="/var/log/apache2"
 LABEL description="webserver"
 LABEL version="1.0"
 
-COPY index.html /var/wwww/html/
+ADD index.html /var/wwww/html/
 
 VOLUME /var/www/html/
 EXPOSE 80
